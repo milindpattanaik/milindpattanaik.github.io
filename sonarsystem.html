@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raiden Radec</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+  <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Sonar System</h2>
+        </header>
+        <figure>
+          <img src="./assets/images/2023-03-19_13-46.png" alt="LazyBot" class="centre" width="600" loading="lazy">
+      </figure>
+
+        <section class="about-text">
+          <p>
+          </br>
+
+            Sonar or also known as <b>Sonic Navigation and Ranging</b> is a technique that uses sound propogation to navigate , measure distances,
+            communicate with or detect objects on or under the surface of the water . Sound waves emitted by or reflected from the object are detected 
+            by sonar apparatus and analyzed for the information they contain .
+          </p>
+
+          <p>
+           This project uses Arduino UNO R3 microcontroller which has an ATmega328P processor for controlling the movement of the SG90 servo motor
+           and the HC-SR04 ultrsonic senor . The HC-SR04 is placed on top of the servo motor with the help of carboard and hot glue gun . The 
+           Ultrasonic Sensor sends an ultrasonic burst of pulses from the transmitter to the targeted object for detection and the servo motor 
+           give the sensor a 180 degree rotation for more area coverage . The arduino code is written in C for the control of the SG90 and 
+           HC-SR04 where as pyserial is used for a serial connection between the sonar GUI and the arduino.
+          </p>
+            
+          <figure>
+            <img src="./assets/images/2023-03-21_09-02.png" alt="LazyBot" class="centre" width="600" loading="lazy">
+        </figure>
+          
+          
+        </section>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
