@@ -578,7 +578,7 @@ main {
 
 .testimonials-avatar-box {
   position: absolute;
-  top: 0;
+  top:  0;
   left: 0;
   transform: translate(15px, -25px);
   background: var(--bg-gradient-onyx);
@@ -594,12 +594,25 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
   display: -webkit-box;
-  line-clamp: 4;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  max-height: 6.4em; /* Adjust based on your line-height */
 }
 
+.testimonials-text:hover {
+  display: block;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
+  overflow: visible;
+  white-space: normal;
+  max-height: none; /* Optional: Add a background to improve readability */
+  padding: 10px; /* Optional: Add padding for better spacing */
+  border-radius: 5px; /* Optional: Smooth rounded edges */
+  z-index: 10;
+}
 
 /**
  * #testimonials-modal
@@ -1127,6 +1140,17 @@ main {
 
 .mapbox figure { height: 100%; }
 
+.image-container {
+  display: flex;
+  justify-content: center; /* Centers the images */
+  gap: 100px; /* Adds spacing between images */
+}
+
+.image-container img {
+  width: 500px; /* Set fixed or percentage-based width */
+  height: auto; /* Maintains aspect ratio */
+}
+
 .mapbox iframe {
   width: 100%;
   height: 100%;
@@ -1241,7 +1265,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .project-img,
-  .blog-banner-box { height: auto; }
+  .blog-banner-box {height: 200px; }
 
 }
 
