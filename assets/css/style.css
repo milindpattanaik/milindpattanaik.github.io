@@ -1147,7 +1147,8 @@ main {
 }
 
 .image-container img {
-  width: 500px; /* Set fixed or percentage-based width */
+  width: 100%;
+  max-width: 500px;  /* Adjust based on your design */
   height: auto; /* Maintains aspect ratio */
 }
 
