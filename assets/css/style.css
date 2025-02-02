@@ -1150,6 +1150,13 @@ main {
   width: 100%;
   max-width: 500px;  /* Adjust based on your design */
   height: auto; /* Maintains aspect ratio */
+  overflow: hidden; /* Ensures no unwanted overflow */
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  .image-container img {
+    width: 100%;
+  }
 }
 
 .mapbox iframe {
