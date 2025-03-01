@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milind Pattanaik</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/skull(2).ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+  <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">BitChaos-STM32F411CEU6-TRNG</h2>
+          <h3 class="h3 timeline-item-title">Millind Pattanaik, Kushal Sai G, Krishnasimha Yadati</h3>
+        </header>
+
+        <form action="https://github.com/milindpattanaik/BitChaos-STM32F411CEU6-TRNG">
+          <button class="form-btn">Github</button>
+        </form>
+
+    </br>
+        <section class="about-text">
+
+            <div class = "image-container">
+                <img src="./assets/images/TRNGhardwarepic (1).jpeg" alt="bitchaos" class="centre"  loading="lazy">
+            </div>
+
+            <p>
+            </br>
+            BitChaos is a 9-bit True Random Number Generator (TRNG) designed for high-entropy random number generation on the STM32F411CEU6 (Black Pill) microcontroller. 
+            Utilizing the STM32 HAL framework with CMake, the project leverages the inherent unpredictability of chaotic physical processes to produce truly random bits. 
+            These random values are then transmitted via USB Type-C using the USB CDC (Virtual COM Port) interface, ensuring seamless communication between the microcontroller and a host device.
+            </p>
+
+            <p>
+              To visualize and utilize the generated random data, BitChaos integrates with a lightweight web application built using Flask, HTML, and CSS. 
+              This web interface allows users to monitor, analyze, and process the random numbers in real time. Designed for cryptographic applications, security research, and statistical analysis, BitChaos provides a robust, open-source TRNG solution that combines embedded systems expertise with modern web technologies
+            </p>
+
+        </br>
+
+        <div class="image-container">
+            <img src="./assets/images/bitchas.PNG" alt="bitchaos-web" class="centre"  loading="lazy">
+
+            <img src="./assets/images/TRNGcircuitpicture.png" alt="bitchaos-circuit" class="centre" loading="lazy">
+        </div>
+
+    </br>
+         
+    </section>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
